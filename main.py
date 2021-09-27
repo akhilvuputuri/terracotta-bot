@@ -18,9 +18,12 @@ def getDriver(url):
     firefox_options.add_argument("--disable-dev-shm-usage")
     firefox_options.add_argument("--disable-gpu")
     driver = webdriver.Firefox(firefox_options = firefox_options,firefox_profile = profile)
-    driver.get(url)
+    # driver.get(url)
     return driver
-  
-driver = getDriver("https://10.10.0.112/");
-driver.get("https://10.10.0.112/")
-driver.quit()
+
+print("Starting up bot")  
+# driver = webdriver.Firefox()
+# driver.get("https://10.10.0.112/")
+# driver.quit()
+
+print("Shutting down bot")
